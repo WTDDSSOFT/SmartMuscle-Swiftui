@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */; };
+		EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302C2A16C83E00DE5BA7 /* ContentView.swift */; };
+		EE70302F2A16C83F00DE5BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */; };
+		EE7030332A16C83F00DE5BA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7030322A16C83F00DE5BA7 /* Preview Assets.xcassets */; };
+		EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303A2A16C9D200DE5BA7 /* WorkOutPlan.swift */; };
+		EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */; };
+		EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */; };
+		EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7030402A16C9F500DE5BA7 /* Settings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMuscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMuscleApp.swift; sourceTree = "<group>"; };
+		EE70302C2A16C83E00DE5BA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartMuscle.entitlements; sourceTree = "<group>"; };
+		EE7030322A16C83F00DE5BA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE70303A2A16C9D200DE5BA7 /* WorkOutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutPlan.swift; sourceTree = "<group>"; };
+		EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietePlan.swift; sourceTree = "<group>"; };
+		EE7030402A16C9F500DE5BA7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE7030242A16C83E00DE5BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE70301E2A16C83E00DE5BA7 = {
+			isa = PBXGroup;
+			children = (
+				EE7030292A16C83E00DE5BA7 /* SmartMuscle */,
+				EE7030282A16C83E00DE5BA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE7030282A16C83E00DE5BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE7030292A16C83E00DE5BA7 /* SmartMuscle */ = {
+			isa = PBXGroup;
+			children = (
+				EE7030432A16CD2500DE5BA7 /* Views */,
+				EE7030422A16CD2100DE5BA7 /* Models */,
+				EE7030392A16C9B100DE5BA7 /* TabsViews */,
+				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
+				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
+				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
+				EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */,
+				EE7030312A16C83F00DE5BA7 /* Preview Content */,
+			);
+			path = SmartMuscle;
+			sourceTree = "<group>";
+		};
+		EE7030312A16C83F00DE5BA7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE7030322A16C83F00DE5BA7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE7030392A16C9B100DE5BA7 /* TabsViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabsViews;
+			sourceTree = "<group>";
+		};
+		EE7030422A16CD2100DE5BA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE7030432A16CD2500DE5BA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE70303A2A16C9D200DE5BA7 /* WorkOutPlan.swift */,
+				EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */,
+				EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */,
+				EE7030402A16C9F500DE5BA7 /* Settings.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE7030262A16C83E00DE5BA7 /* SmartMuscle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE7030362A16C83F00DE5BA7 /* Build configuration list for PBXNativeTarget "SmartMuscle" */;
+			buildPhases = (
+				EE7030232A16C83E00DE5BA7 /* Sources */,
+				EE7030242A16C83E00DE5BA7 /* Frameworks */,
+				EE7030252A16C83E00DE5BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartMuscle;
+			productName = SmartMuscle;
+			productReference = EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE70301F2A16C83E00DE5BA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EE7030262A16C83E00DE5BA7 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = EE7030222A16C83E00DE5BA7 /* Build configuration list for PBXProject "SmartMuscle" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE70301E2A16C83E00DE5BA7;
+			productRefGroup = EE7030282A16C83E00DE5BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE7030262A16C83E00DE5BA7 /* SmartMuscle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE7030252A16C83E00DE5BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7030332A16C83F00DE5BA7 /* Preview Assets.xcassets in Resources */,
+				EE70302F2A16C83F00DE5BA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE7030232A16C83E00DE5BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */,
+				EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */,
+				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
+				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
+				EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */,
+				EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE7030342A16C83F00DE5BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE7030352A16C83F00DE5BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EE7030372A16C83F00DE5BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartMuscle/SmartMuscle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartMuscle/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QASH6QZ2H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamSantos.SmartMuscle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE7030382A16C83F00DE5BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartMuscle/SmartMuscle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartMuscle/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QASH6QZ2H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.williamSantos.SmartMuscle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE7030222A16C83E00DE5BA7 /* Build configuration list for PBXProject "SmartMuscle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7030342A16C83F00DE5BA7 /* Debug */,
+				EE7030352A16C83F00DE5BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE7030362A16C83F00DE5BA7 /* Build configuration list for PBXNativeTarget "SmartMuscle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7030372A16C83F00DE5BA7 /* Debug */,
+				EE7030382A16C83F00DE5BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE70301F2A16C83E00DE5BA7 /* Project object */;
+}
