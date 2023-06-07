@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81972A1BF9A300C39901 /* UserInfomView.swift */; };
+		EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */; };
+		EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */; };
 		EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */; };
 		EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302C2A16C83E00DE5BA7 /* ContentView.swift */; };
 		EE70302F2A16C83F00DE5BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */; };
@@ -15,9 +18,19 @@
 		EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */; };
 		EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */; };
 		EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7030402A16C9F500DE5BA7 /* Settings.swift */; };
+		EEADCEF02A30A4E000B9A805 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */; };
+		EEADCEF22A30A4F500B9A805 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF12A30A4F500B9A805 /* SignInView.swift */; };
+		EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */; };
+		EEADCEF82A30AF5F00B9A805 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF72A30AF5F00B9A805 /* User.swift */; };
+		EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */; };
+		EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE0D81972A1BF9A300C39901 /* UserInfomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomView.swift; sourceTree = "<group>"; };
+		EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradToPro.swift; sourceTree = "<group>"; };
+		EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exntension.swift"; sourceTree = "<group>"; };
+		EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartMuscleDebug.entitlements; sourceTree = "<group>"; };
 		EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMuscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMuscleApp.swift; sourceTree = "<group>"; };
 		EE70302C2A16C83E00DE5BA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +41,12 @@
 		EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
 		EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietePlan.swift; sourceTree = "<group>"; };
 		EE7030402A16C9F500DE5BA7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EEADCEF12A30A4F500B9A805 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTextField.swift; sourceTree = "<group>"; };
+		EEADCEF72A30AF5F00B9A805 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSecureField.swift; sourceTree = "<group>"; };
+		EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0D81962A1BF99200C39901 /* SMSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE0D81972A1BF9A300C39901 /* UserInfomView.swift */,
+				EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */,
+			);
+			path = SMSubViews;
+			sourceTree = "<group>";
+		};
+		EE0D819B2A1C1E9E00C39901 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EE70301E2A16C83E00DE5BA7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +96,13 @@
 		EE7030292A16C83E00DE5BA7 /* SmartMuscle */ = {
 			isa = PBXGroup;
 			children = (
-				EE7030432A16CD2500DE5BA7 /* Views */,
+				EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */,
+				EEADCEE32A30A2DE00B9A805 /* ViewModel */,
+				EEADCEE82A30A41900B9A805 /* Utilitis */,
+				EEE4DE702A1BCE4A000CF146 /* Views */,
+				EE7030432A16CD2500DE5BA7 /* UIComponents */,
 				EE7030422A16CD2100DE5BA7 /* Models */,
-				EE7030392A16C9B100DE5BA7 /* TabsViews */,
-				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
-				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
-				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
-				EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */,
+				EEADCEE22A30959900B9A805 /* Core */,
 				EE7030312A16C83F00DE5BA7 /* Preview Content */,
 			);
 			path = SmartMuscle;
@@ -80,27 +116,164 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		EE7030392A16C9B100DE5BA7 /* TabsViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TabsViews;
-			sourceTree = "<group>";
-		};
 		EE7030422A16CD2100DE5BA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EEADCEF62A30AF4500B9A805 /* SMSignUp */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EE7030432A16CD2500DE5BA7 /* Views */ = {
+		EE7030432A16CD2500DE5BA7 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEF32A30AB0A00B9A805 /* SMTextFields */,
+				EEADCEE72A30A3E200B9A805 /* SMButtons */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		EEADCEE12A30956100B9A805 /* SMSettings */ = {
+			isa = PBXGroup;
+			children = (
+				EE7030402A16C9F500DE5BA7 /* Settings.swift */,
+				EE0D81962A1BF99200C39901 /* SMSubViews */,
+			);
+			path = SMSettings;
+			sourceTree = "<group>";
+		};
+		EEADCEE22A30959900B9A805 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
+				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
+				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
+				EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EEADCEE32A30A2DE00B9A805 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEADCEE42A30A32700B9A805 /* SMPerson */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEE92A30A44D00B9A805 /* SMSections */,
+			);
+			path = SMPerson;
+			sourceTree = "<group>";
+		};
+		EEADCEE52A30A36E00B9A805 /* SMPersonal */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEED2A30A48F00B9A805 /* SMSections */,
+			);
+			path = SMPersonal;
+			sourceTree = "<group>";
+		};
+		EEADCEE62A30A3CA00B9A805 /* SMAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEEE2A30A4BE00B9A805 /* Sections */,
+			);
+			path = SMAuthentication;
+			sourceTree = "<group>";
+		};
+		EEADCEE72A30A3E200B9A805 /* SMButtons */ = {
+			isa = PBXGroup;
+			children = (
+				EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */,
+			);
+			path = SMButtons;
+			sourceTree = "<group>";
+		};
+		EEADCEE82A30A41900B9A805 /* Utilitis */ = {
+			isa = PBXGroup;
+			children = (
+				EE0D819B2A1C1E9E00C39901 /* Extensions */,
+			);
+			path = Utilitis;
+			sourceTree = "<group>";
+		};
+		EEADCEE92A30A44D00B9A805 /* SMSections */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEEA2A30A45F00B9A805 /* SMWorkOutPlan */,
+				EEADCEEB2A30A47000B9A805 /* SMBodyView */,
+				EEADCEEC2A30A47A00B9A805 /* SMDietePlan */,
+			);
+			path = SMSections;
+			sourceTree = "<group>";
+		};
+		EEADCEEA2A30A45F00B9A805 /* SMWorkOutPlan */ = {
 			isa = PBXGroup;
 			children = (
 				EE70303A2A16C9D200DE5BA7 /* WorkOutPlan.swift */,
+			);
+			path = SMWorkOutPlan;
+			sourceTree = "<group>";
+		};
+		EEADCEEB2A30A47000B9A805 /* SMBodyView */ = {
+			isa = PBXGroup;
+			children = (
 				EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */,
+			);
+			path = SMBodyView;
+			sourceTree = "<group>";
+		};
+		EEADCEEC2A30A47A00B9A805 /* SMDietePlan */ = {
+			isa = PBXGroup;
+			children = (
 				EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */,
-				EE7030402A16C9F500DE5BA7 /* Settings.swift */,
+			);
+			path = SMDietePlan;
+			sourceTree = "<group>";
+		};
+		EEADCEED2A30A48F00B9A805 /* SMSections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SMSections;
+			sourceTree = "<group>";
+		};
+		EEADCEEE2A30A4BE00B9A805 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */,
+				EEADCEF12A30A4F500B9A805 /* SignInView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		EEADCEF32A30AB0A00B9A805 /* SMTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */,
+				EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */,
+			);
+			path = SMTextFields;
+			sourceTree = "<group>";
+		};
+		EEADCEF62A30AF4500B9A805 /* SMSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEF72A30AF5F00B9A805 /* User.swift */,
+			);
+			path = SMSignUp;
+			sourceTree = "<group>";
+		};
+		EEE4DE702A1BCE4A000CF146 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEADCEE62A30A3CA00B9A805 /* SMAuthentication */,
+				EEADCEE52A30A36E00B9A805 /* SMPersonal */,
+				EEADCEE42A30A32700B9A805 /* SMPerson */,
+				EEADCEE12A30956100B9A805 /* SMSettings */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,10 +348,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */,
 				EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */,
+				EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */,
+				EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */,
+				EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */,
 				EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */,
+				EEADCEF02A30A4E000B9A805 /* SignUpView.swift in Sources */,
+				EEADCEF82A30AF5F00B9A805 /* User.swift in Sources */,
+				EEADCEF22A30A4F500B9A805 /* SignInView.swift in Sources */,
 				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
+				EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */,
 				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
+				EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */,
 				EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */,
 				EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */,
 			);
@@ -301,7 +483,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SmartMuscle/SmartMuscle.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SmartMuscle/SmartMuscleDebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartMuscle/Preview Content\"";
@@ -326,8 +510,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamSantos.SmartMuscle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,7 +526,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SmartMuscle/SmartMuscle.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SmartMuscle/Core/SmartMuscle.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartMuscle/Preview Content\"";
@@ -364,8 +553,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamSantos.SmartMuscle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
