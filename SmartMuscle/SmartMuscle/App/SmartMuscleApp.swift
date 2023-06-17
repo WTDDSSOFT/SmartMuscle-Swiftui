@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SmartMuscleApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegateAdapter.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }

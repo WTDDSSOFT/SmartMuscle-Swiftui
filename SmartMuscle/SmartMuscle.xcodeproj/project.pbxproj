@@ -10,6 +10,17 @@
 		EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81972A1BF9A300C39901 /* UserInfomView.swift */; };
 		EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */; };
 		EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */; };
+		EE4895D62A3C7925008666FD /* AppDelegateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */; };
+		EE4896182A3C9BC1008666FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896172A3C9BC1008666FD /* FirebaseAnalytics */; };
+		EE48961A2A3C9BC1008666FD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896192A3C9BC1008666FD /* FirebaseAppCheck */; };
+		EE48961C2A3C9BC1008666FD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EE48961B2A3C9BC1008666FD /* FirebaseAuth */; };
+		EE48961E2A3C9BC1008666FD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EE48961D2A3C9BC1008666FD /* FirebaseDatabase */; };
+		EE4896202A3C9BC1008666FD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = EE48961F2A3C9BC1008666FD /* FirebaseFunctions */; };
+		EE4896222A3C9BC1008666FD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896212A3C9BC1008666FD /* FirebaseMessaging */; };
+		EE4896242A3C9BC1008666FD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896232A3C9BC1008666FD /* FirebaseStorage */; };
+		EE4F38FB2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE4F38F92A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld */; };
+		EE5DAAA82A3131CB005A15E0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EE5DAAA72A3131CB005A15E0 /* GoogleSignIn */; };
+		EE5DAAAA2A3131CB005A15E0 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE5DAAA92A3131CB005A15E0 /* GoogleSignInSwift */; };
 		EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */; };
 		EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302C2A16C83E00DE5BA7 /* ContentView.swift */; };
 		EE70302F2A16C83F00DE5BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */; };
@@ -18,18 +29,24 @@
 		EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */; };
 		EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */; };
 		EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7030402A16C9F500DE5BA7 /* Settings.swift */; };
+		EEA92C9C2A3A8C5600AFF46E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */; };
 		EEADCEF02A30A4E000B9A805 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */; };
-		EEADCEF22A30A4F500B9A805 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF12A30A4F500B9A805 /* SignInView.swift */; };
+		EEADCEF22A30A4F500B9A805 /* SMAutheticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF12A30A4F500B9A805 /* SMAutheticationView.swift */; };
 		EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */; };
-		EEADCEF82A30AF5F00B9A805 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF72A30AF5F00B9A805 /* User.swift */; };
 		EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */; };
 		EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */; };
+		EEFCC5062A3E49AD002E88D9 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC5052A3E49AD002E88D9 /* SignInViewModel.swift */; };
+		EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */; };
+		EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */; };
+		EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50D2A3E55F2002E88D9 /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE0D81972A1BF9A300C39901 /* UserInfomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomView.swift; sourceTree = "<group>"; };
 		EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradToPro.swift; sourceTree = "<group>"; };
 		EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exntension.swift"; sourceTree = "<group>"; };
+		EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateAdapter.swift; sourceTree = "<group>"; };
+		EE4F38FA2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMuscleAppModel.xcdatamodel; sourceTree = "<group>"; };
 		EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartMuscleDebug.entitlements; sourceTree = "<group>"; };
 		EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMuscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMuscleApp.swift; sourceTree = "<group>"; };
@@ -41,12 +58,16 @@
 		EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
 		EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietePlan.swift; sourceTree = "<group>"; };
 		EE7030402A16C9F500DE5BA7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		EEADCEF12A30A4F500B9A805 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		EEADCEF12A30A4F500B9A805 /* SMAutheticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAutheticationView.swift; sourceTree = "<group>"; };
 		EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTextField.swift; sourceTree = "<group>"; };
-		EEADCEF72A30AF5F00B9A805 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSecureField.swift; sourceTree = "<group>"; };
 		EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		EEFCC5052A3E49AD002E88D9 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRAuthManager.swift; sourceTree = "<group>"; };
+		EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTabBarView.swift; sourceTree = "<group>"; };
+		EEFCC50D2A3E55F2002E88D9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE4896222A3C9BC1008666FD /* FirebaseMessaging in Frameworks */,
+				EE5DAAA82A3131CB005A15E0 /* GoogleSignIn in Frameworks */,
+				EE48961C2A3C9BC1008666FD /* FirebaseAuth in Frameworks */,
+				EE4896242A3C9BC1008666FD /* FirebaseStorage in Frameworks */,
+				EE5DAAAA2A3131CB005A15E0 /* GoogleSignInSwift in Frameworks */,
+				EE4896202A3C9BC1008666FD /* FirebaseFunctions in Frameworks */,
+				EE4896182A3C9BC1008666FD /* FirebaseAnalytics in Frameworks */,
+				EE48961A2A3C9BC1008666FD /* FirebaseAppCheck in Frameworks */,
+				EE48961E2A3C9BC1008666FD /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +107,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EE4895E92A3C91D5008666FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE70301E2A16C83E00DE5BA7 = {
 			isa = PBXGroup;
 			children = (
 				EE7030292A16C83E00DE5BA7 /* SmartMuscle */,
 				EE7030282A16C83E00DE5BA7 /* Products */,
+				EE4895E92A3C91D5008666FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,13 +134,13 @@
 		EE7030292A16C83E00DE5BA7 /* SmartMuscle */ = {
 			isa = PBXGroup;
 			children = (
-				EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */,
+				EEA92C9A2A3A896D00AFF46E /* Managers */,
 				EEADCEE32A30A2DE00B9A805 /* ViewModel */,
 				EEADCEE82A30A41900B9A805 /* Utilitis */,
-				EEE4DE702A1BCE4A000CF146 /* Views */,
-				EE7030432A16CD2500DE5BA7 /* UIComponents */,
+				EEE4DE702A1BCE4A000CF146 /* Sections */,
+				EE7030432A16CD2500DE5BA7 /* Views */,
 				EE7030422A16CD2100DE5BA7 /* Models */,
-				EEADCEE22A30959900B9A805 /* Core */,
+				EEADCEE22A30959900B9A805 /* App */,
 				EE7030312A16C83F00DE5BA7 /* Preview Content */,
 			);
 			path = SmartMuscle;
@@ -119,18 +157,25 @@
 		EE7030422A16CD2100DE5BA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EEADCEF62A30AF4500B9A805 /* SMSignUp */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EE7030432A16CD2500DE5BA7 /* UIComponents */ = {
+		EE7030432A16CD2500DE5BA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EEADCEF32A30AB0A00B9A805 /* SMTextFields */,
 				EEADCEE72A30A3E200B9A805 /* SMButtons */,
 			);
-			path = UIComponents;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEA92C9A2A3A896D00AFF46E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EEFCC5072A3E4C96002E88D9 /* Firebase */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		EEADCEE12A30956100B9A805 /* SMSettings */ = {
@@ -142,20 +187,25 @@
 			path = SMSettings;
 			sourceTree = "<group>";
 		};
-		EEADCEE22A30959900B9A805 /* Core */ = {
+		EEADCEE22A30959900B9A805 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */,
+				EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */,
 				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
 				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
 				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
 				EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */,
+				EE4F38F92A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld */,
+				EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */,
 			);
-			path = Core;
+			path = App;
 			sourceTree = "<group>";
 		};
 		EEADCEE32A30A2DE00B9A805 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEFCC5052A3E49AD002E88D9 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				EEADCEEE2A30A4BE00B9A805 /* Sections */,
+				EEADCEF12A30A4F500B9A805 /* SMAutheticationView.swift */,
 			);
 			path = SMAuthentication;
 			sourceTree = "<group>";
@@ -245,7 +296,6 @@
 			isa = PBXGroup;
 			children = (
 				EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */,
-				EEADCEF12A30A4F500B9A805 /* SignInView.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -259,23 +309,33 @@
 			path = SMTextFields;
 			sourceTree = "<group>";
 		};
-		EEADCEF62A30AF4500B9A805 /* SMSignUp */ = {
+		EEE4DE702A1BCE4A000CF146 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				EEADCEF72A30AF5F00B9A805 /* User.swift */,
-			);
-			path = SMSignUp;
-			sourceTree = "<group>";
-		};
-		EEE4DE702A1BCE4A000CF146 /* Views */ = {
-			isa = PBXGroup;
-			children = (
+				EEFCC50A2A3E5337002E88D9 /* SMTabBar */,
 				EEADCEE62A30A3CA00B9A805 /* SMAuthentication */,
 				EEADCEE52A30A36E00B9A805 /* SMPersonal */,
 				EEADCEE42A30A32700B9A805 /* SMPerson */,
 				EEADCEE12A30956100B9A805 /* SMSettings */,
+				EEFCC50D2A3E55F2002E88D9 /* RootView.swift */,
 			);
-			path = Views;
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		EEFCC5072A3E4C96002E88D9 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		EEFCC50A2A3E5337002E88D9 /* SMTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */,
+			);
+			path = SMTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +354,17 @@
 			dependencies = (
 			);
 			name = SmartMuscle;
+			packageProductDependencies = (
+				EE5DAAA72A3131CB005A15E0 /* GoogleSignIn */,
+				EE5DAAA92A3131CB005A15E0 /* GoogleSignInSwift */,
+				EE4896172A3C9BC1008666FD /* FirebaseAnalytics */,
+				EE4896192A3C9BC1008666FD /* FirebaseAppCheck */,
+				EE48961B2A3C9BC1008666FD /* FirebaseAuth */,
+				EE48961D2A3C9BC1008666FD /* FirebaseDatabase */,
+				EE48961F2A3C9BC1008666FD /* FirebaseFunctions */,
+				EE4896212A3C9BC1008666FD /* FirebaseMessaging */,
+				EE4896232A3C9BC1008666FD /* FirebaseStorage */,
+			);
 			productName = SmartMuscle;
 			productReference = EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */;
 			productType = "com.apple.product-type.application";
@@ -322,6 +393,10 @@
 				Base,
 			);
 			mainGroup = EE70301E2A16C83E00DE5BA7;
+			packageReferences = (
+				EE5DAAA62A3131CB005A15E0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EE7030282A16C83E00DE5BA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +413,7 @@
 			files = (
 				EE7030332A16C83F00DE5BA7 /* Preview Assets.xcassets in Resources */,
 				EE70302F2A16C83F00DE5BA7 /* Assets.xcassets in Resources */,
+				EEA92C9C2A3A8C5600AFF46E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,18 +425,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */,
+				EE4895D62A3C7925008666FD /* AppDelegateAdapter.swift in Sources */,
 				EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */,
 				EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */,
+				EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */,
 				EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */,
+				EE4F38FB2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld in Sources */,
 				EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */,
 				EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */,
 				EEADCEF02A30A4E000B9A805 /* SignUpView.swift in Sources */,
-				EEADCEF82A30AF5F00B9A805 /* User.swift in Sources */,
-				EEADCEF22A30A4F500B9A805 /* SignInView.swift in Sources */,
+				EEFCC5062A3E49AD002E88D9 /* SignInViewModel.swift in Sources */,
+				EEADCEF22A30A4F500B9A805 /* SMAutheticationView.swift in Sources */,
 				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
 				EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */,
 				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
 				EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */,
+				EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */,
+				EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */,
 				EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */,
 				EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */,
 			);
@@ -483,7 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SmartMuscle/SmartMuscleDebug.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SmartMuscle/App/SmartMuscleDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -526,7 +607,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = SmartMuscle/Core/SmartMuscle.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SmartMuscle/App/SmartMuscle.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +667,87 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 10.0.0;
+				minimumVersion = 9.0.0;
+			};
+		};
+		EE5DAAA62A3131CB005A15E0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE4896172A3C9BC1008666FD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		EE4896192A3C9BC1008666FD /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		EE48961B2A3C9BC1008666FD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EE48961D2A3C9BC1008666FD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		EE48961F2A3C9BC1008666FD /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		EE4896212A3C9BC1008666FD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		EE4896232A3C9BC1008666FD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE4896162A3C9BC1008666FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		EE5DAAA72A3131CB005A15E0 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE5DAAA62A3131CB005A15E0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		EE5DAAA92A3131CB005A15E0 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE5DAAA62A3131CB005A15E0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EE4F38F92A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE4F38FA2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodel */,
+			);
+			currentVersion = EE4F38FA2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodel */;
+			path = SmartMuscleAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE70301F2A16C83E00DE5BA7 /* Project object */;
 }

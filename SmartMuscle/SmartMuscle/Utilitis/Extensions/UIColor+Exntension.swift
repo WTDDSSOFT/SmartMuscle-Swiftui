@@ -14,4 +14,7 @@ extension UIColor {
 
     static let darkBackground = rgb(red: 28, green: 28, blue: 30)
     static let darkUpgrateToPro = rgb(red: 44, green: 44, blue: 46)
+    
+    
+    static let goldBackground = rgb(red: 210, green: 172, blue: 31)
 }
