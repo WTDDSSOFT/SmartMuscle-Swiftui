@@ -52,7 +52,7 @@ struct SMAutheticationView: View {
     @AppStorage("userId") var userId: String = ""
     
     var body: some View {
-        VStack(alignment: .center, spacing: 2) {
+        VStack(alignment: .center, spacing: 1) {
             
             Image(systemName: "dumbbell")
                 .resizable()
@@ -71,27 +71,38 @@ struct SMAutheticationView: View {
                 .foregroundColor(Color(.goldBackground))
                 .padding(.all)
             
-            Button {
+            VStack(spacing: 15) {
+                NavigationLink {
+                    SMSignInView()
+                } label: {
+                    Text("Sign In with Email")
+                        .font(.headline)
+                        .foregroundColor(Color(.goldBackground))
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background(Color.gray.opacity(0.4))
+                        .cornerRadius(8)
+                }
                 
-            } label: {
-                SignInWithAppleViewRepresentable(type: .default, style: .black)
-                    .allowsHitTesting(false)
-            }
-            .frame(height:  55)
-            
-            
-            GoogleSignInButton(
-                viewModel: GoogleSignInButtonViewModel(
-                    scheme: .dark,
-                    style:.wide,
-                    state: .normal)
-            ) {
+                Button {
+                    
+                } label: {
+                    SignInWithAppleViewRepresentable(type: .default, style: .whiteOutline)
+                        .allowsHitTesting(false)
+                }
+                .frame(height:  55)
                 
+                GoogleSignInButton(
+                    viewModel: GoogleSignInButtonViewModel(
+                        scheme: .dark,
+                        style: .wide,
+                        state: .normal)
+                ) {
+                    
+                }
+                .frame(height: 55)
+                .cornerRadius(8)
             }
-            .frame(height: 55)
-            .padding()
-            .cornerRadius(8)
-            
             Spacer()
             
             Text("@Develop by WTDDSSOFT/ IDevelor Company")
@@ -104,9 +115,11 @@ struct SMAutheticationView: View {
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct SMAutheticationView_Previews: PreviewProvider {
     static var previews: some View {
-        SMAutheticationView()
+        NavigationStack {
+            SMAutheticationView()
+        }
     }
 }
 

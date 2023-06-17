@@ -39,6 +39,7 @@
 		EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */; };
 		EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */; };
 		EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50D2A3E55F2002E88D9 /* RootView.swift */; };
+		EEFCC5102A3E598D002E88D9 /* SMSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50F2A3E598D002E88D9 /* SMSignInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRAuthManager.swift; sourceTree = "<group>"; };
 		EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTabBarView.swift; sourceTree = "<group>"; };
 		EEFCC50D2A3E55F2002E88D9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		EEFCC50F2A3E598D002E88D9 /* SMSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSignInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,14 +192,14 @@
 		EEADCEE22A30959900B9A805 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */,
-				EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */,
-				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
-				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
-				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
 				EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */,
+				EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */,
+				EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */,
+				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
+				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
+				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
 				EE4F38F92A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld */,
-				EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */,
+				EEFCC5112A3E59CC002E88D9 /* AppDelegateAdapter */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -296,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */,
+				EEFCC50F2A3E598D002E88D9 /* SMSignInView.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -336,6 +339,14 @@
 				EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */,
 			);
 			path = SMTabBar;
+			sourceTree = "<group>";
+		};
+		EEFCC5112A3E59CC002E88D9 /* AppDelegateAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */,
+			);
+			path = AppDelegateAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +450,7 @@
 				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
 				EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */,
 				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
+				EEFCC5102A3E598D002E88D9 /* SMSignInView.swift in Sources */,
 				EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */,
 				EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */,
 				EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */,
