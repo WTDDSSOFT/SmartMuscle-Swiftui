@@ -22,6 +22,6 @@ struct XMarkButton: View {
 
 struct XMarkButton_Previews: PreviewProvider {
     static var previews: some View {
-        XMarkButton()
+        XMarkButton().previewLayout(.sizeThatFits)
     }
 }

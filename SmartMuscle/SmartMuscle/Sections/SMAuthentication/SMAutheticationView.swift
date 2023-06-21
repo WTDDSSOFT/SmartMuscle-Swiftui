@@ -5,51 +5,53 @@
 //  Created by william torres dias dos santos on 07/06/23.
 //
 
-import SwiftUI
-import AuthenticationServices
+import FirebaseAuth
 import GoogleSignIn
 import GoogleSignInSwift
-import CryptoKit
+import SwiftUI
 
 /**
- 
  This  **SignInView** :
  
  important Features
  1. UI.
  1. App Sign Button - ✅
- 1. Apple
- 2. Google
+ 1. Apple - ✅
+ 2. Google - ✅
  2. Background  base on system background - ✅
  2. Security Section the app, we need study.
- 1. keyChain -
+ 1. keyChain - ?
  */
 
-/** **SignInWithAppleViewRepresentable**:  This struct convert apple uikit button to swiftui button.
+/**
+ Google Button on swiftui
  */
+
 @MainActor
-struct SignInWithAppleViewRepresentable: UIViewRepresentable {
+final class SMAutheticationViewModel: ObservableObject {
     
-    let type: ASAuthorizationAppleIDButton.ButtonType
-    let style: ASAuthorizationAppleIDButton.Style
+    let signInAppleHelper = SignInAppleHelper()
     
-    func makeUIView(context: Context) -> ASAuthorizationAppleIDButton {
-        ASAuthorizationAppleIDButton(authorizationButtonType: type, authorizationButtonStyle: style)
+    func signInGoogle() async throws {
+        let helper = SignInGoogleHelper()
+        let tokens = try await helper.signIn()
+        try await FIRAuthManager.shared.signInWithGoogle(tokens: tokens)
     }
     
-    func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) {
-       
+    func signInApple() async throws {
+        let helper = SignInAppleHelper()
+        let tokens = try await helper.startSignInWithAppleFlow()
+        try await FIRAuthManager.shared.signInWithApple(tokens: tokens)
     }
 }
+
 
 struct SMAutheticationView: View {
     
     @Environment(\.colorScheme) var colorSheme
+    @Binding var showSignInView: Bool
     
-    @AppStorage("email") var email: String = ""
-    @AppStorage("firstName") var firstName: String = ""
-    @AppStorage("lastName") var lastName: String = ""
-    @AppStorage("userId") var userId: String = ""
+    @StateObject private var SMAutehticationVM = SMAutheticationViewModel()
     
     var body: some View {
         VStack(alignment: .center, spacing: 1) {
@@ -73,7 +75,7 @@ struct SMAutheticationView: View {
             
             VStack(spacing: 15) {
                 NavigationLink {
-                    SMSignInView()
+                    SMSignInWithEmailView(showsSignView: $showSignInView)
                 } label: {
                     Text("Sign In with Email")
                         .font(.headline)
@@ -84,25 +86,40 @@ struct SMAutheticationView: View {
                         .cornerRadius(8)
                 }
                 
-                Button {
-                    
-                } label: {
-                    SignInWithAppleViewRepresentable(type: .default, style: .whiteOutline)
-                        .allowsHitTesting(false)
-                }
-                .frame(height:  55)
-                
                 GoogleSignInButton(
                     viewModel: GoogleSignInButtonViewModel(
                         scheme: .dark,
                         style: .wide,
                         state: .normal)
                 ) {
-                    
+                    Task {
+                        do {
+                            try await SMAutehticationVM.signInGoogle()
+                            showSignInView = false
+                        } catch {
+                            print(error)
+                        }
+                    }
                 }
                 .frame(height: 55)
                 .cornerRadius(8)
+                
+                Button {
+                    Task {
+                        do {
+                            try await SMAutehticationVM.signInApple()
+                            showSignInView = false
+                        } catch {
+                            print(error)
+                        }
+                    }
+                } label: {
+                    SignInWithAppleViewRepresentable(type: .default, style: .black)
+                        .allowsHitTesting(false)
+                }
+                .frame(height:  55)
             }
+            
             Spacer()
             
             Text("@Develop by WTDDSSOFT/ IDevelor Company")
@@ -118,35 +135,7 @@ struct SMAutheticationView: View {
 struct SMAutheticationView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            SMAutheticationView()
+            SMAutheticationView(showSignInView: .constant(false))
         }
-    }
-}
-
-struct SignInFieldsView: View {
-    
-    @State var emailText: String = ""
-    @State var passwordText: String = ""
-    @State var fullNameText: String = ""
-    @State var userNameText: String = ""
-    
-    var body: some View {
-        VStack(spacing: 20) {
-            VStack {
-                Image(systemName: "dumbbell")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150, height: 150)
-                    .foregroundColor(Color(.secondaryLabel))
-                    .padding(.all)
-                Text("Smart Muscle")
-                    .font(.system(size: 30, weight: .semibold, design: .default))
-            }
-            .padding(.all)
-            
-            SMTextField(inputTitle: "Email", inputText: emailText)
-            SMSecureField(inputPassword: "Passsword", inputText: passwordText)
-            
-        }.padding(.all)
     }
 }

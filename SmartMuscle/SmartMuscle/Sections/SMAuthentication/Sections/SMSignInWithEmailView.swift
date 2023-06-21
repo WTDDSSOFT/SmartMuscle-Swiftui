@@ -13,29 +13,34 @@ final class SignInWithEmailViewModel: ObservableObject {
     @Published var email = ""
     @Published var passsword = ""
     
-    func signIn() {
+    func signUp()  async throws {
         
-        guard !email.isEmpty, !passsword.isEmpty else {
+        guard !email.isEmpty,
+              !passsword.isEmpty else {
             print("No email or passowrd")
             return
         }
         
-        Task {
-            do {
-               let returnUserData = try await FIRAuthManager.shared.createUser(email: email, password: passsword)
-                print(returnUserData)
-            } catch {
-                print("Error: \(error)")
-            }
-        }
+       try await FIRAuthManager.shared.createUser(email: email, password: passsword)
     }
     
+    func signIn()  async throws {
+        
+        guard !email.isEmpty,
+              !passsword.isEmpty else {
+            print("No email or passowrd")
+            return
+        }
+        
+       try await FIRAuthManager.shared.signInUser(email: email, password: passsword)
+    }
 }
 
-struct SMSignInView: View {
+struct SMSignInWithEmailView: View {
     
     @StateObject private var signInEmailVM = SignInWithEmailViewModel()
-    
+    @Binding var showsSignView: Bool
+
     var body: some View {
         VStack {
             TextField("Email", text: $signInEmailVM.email)
@@ -50,7 +55,23 @@ struct SMSignInView: View {
                 
             
             Button {
-                signInEmailVM.signIn()
+                Task {
+                    do {
+                        try await signInEmailVM.signUp()
+                        showsSignView = false
+                        return
+                    } catch {
+                        print("DEBUG: signUp \(error)")
+                    }
+                    
+                    do {
+                        try await signInEmailVM.signIn()
+                        showsSignView = false
+                        return
+                    } catch {
+                        print("DEBUG: signIn \(error)")
+                    }
+                }
             } label: {
                 Text("Sign In")
                     .font(.headline)
@@ -70,6 +91,6 @@ struct SMSignInView: View {
 
 struct SMSignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SMSignInView()
+        SMSignInWithEmailView(showsSignView: .constant(false))
     }
 }

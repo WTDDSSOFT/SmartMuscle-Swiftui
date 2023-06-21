@@ -9,7 +9,10 @@ import SwiftUI
 
 struct BodyView: View {
     var body: some View {
-        Text("Body ")
+        NavigationView {
+            Text("Body ")
+                .navigationTitle("Body")
+        }
     }
 }
 

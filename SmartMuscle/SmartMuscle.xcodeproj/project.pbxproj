@@ -10,6 +10,7 @@
 		EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81972A1BF9A300C39901 /* UserInfomView.swift */; };
 		EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */; };
 		EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */; };
+		EE218B482A43261700F75DFF /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE218B472A43261700F75DFF /* SignInGoogleHelper.swift */; };
 		EE4895D62A3C7925008666FD /* AppDelegateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */; };
 		EE4896182A3C9BC1008666FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896172A3C9BC1008666FD /* FirebaseAnalytics */; };
 		EE48961A2A3C9BC1008666FD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896192A3C9BC1008666FD /* FirebaseAppCheck */; };
@@ -21,55 +22,57 @@
 		EE4F38FB2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE4F38F92A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld */; };
 		EE5DAAA82A3131CB005A15E0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EE5DAAA72A3131CB005A15E0 /* GoogleSignIn */; };
 		EE5DAAAA2A3131CB005A15E0 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EE5DAAA92A3131CB005A15E0 /* GoogleSignInSwift */; };
+		EE6B9AE42A439F6D005EFD5F /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B9AE32A439F6D005EFD5F /* SignInAppleHelper.swift */; };
 		EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */; };
-		EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70302C2A16C83E00DE5BA7 /* ContentView.swift */; };
 		EE70302F2A16C83F00DE5BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */; };
 		EE7030332A16C83F00DE5BA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7030322A16C83F00DE5BA7 /* Preview Assets.xcassets */; };
 		EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303A2A16C9D200DE5BA7 /* WorkOutPlan.swift */; };
 		EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */; };
 		EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */; };
-		EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7030402A16C9F500DE5BA7 /* Settings.swift */; };
+		EE7030412A16C9F500DE5BA7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7030402A16C9F500DE5BA7 /* SettingsView.swift */; };
+		EE8FE00B2A425C5F00EA8E24 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FE00A2A425C5F00EA8E24 /* Utilities.swift */; };
 		EEA92C9C2A3A8C5600AFF46E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */; };
-		EEADCEF02A30A4E000B9A805 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */; };
 		EEADCEF22A30A4F500B9A805 /* SMAutheticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF12A30A4F500B9A805 /* SMAutheticationView.swift */; };
 		EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */; };
 		EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */; };
+		EECEFEC62A41EB17001462C5 /* SMSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEFEC52A41EB17001462C5 /* SMSettingsViewModel.swift */; };
 		EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */; };
-		EEFCC5062A3E49AD002E88D9 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC5052A3E49AD002E88D9 /* SignInViewModel.swift */; };
 		EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */; };
 		EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */; };
 		EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50D2A3E55F2002E88D9 /* RootView.swift */; };
-		EEFCC5102A3E598D002E88D9 /* SMSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50F2A3E598D002E88D9 /* SMSignInView.swift */; };
+		EEFCC5102A3E598D002E88D9 /* SMSignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50F2A3E598D002E88D9 /* SMSignInWithEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE0D81972A1BF9A300C39901 /* UserInfomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomView.swift; sourceTree = "<group>"; };
 		EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradToPro.swift; sourceTree = "<group>"; };
 		EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exntension.swift"; sourceTree = "<group>"; };
+		EE218B472A43261700F75DFF /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateAdapter.swift; sourceTree = "<group>"; };
 		EE4F38FA2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMuscleAppModel.xcdatamodel; sourceTree = "<group>"; };
 		EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartMuscleDebug.entitlements; sourceTree = "<group>"; };
+		EE6B9AE32A439F6D005EFD5F /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 		EE7030272A16C83E00DE5BA7 /* SmartMuscle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartMuscle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMuscleApp.swift; sourceTree = "<group>"; };
-		EE70302C2A16C83E00DE5BA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartMuscle.entitlements; sourceTree = "<group>"; };
 		EE7030322A16C83F00DE5BA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE70303A2A16C9D200DE5BA7 /* WorkOutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutPlan.swift; sourceTree = "<group>"; };
 		EE70303C2A16C9DE00DE5BA7 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
 		EE70303E2A16C9E700DE5BA7 /* DietePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietePlan.swift; sourceTree = "<group>"; };
-		EE7030402A16C9F500DE5BA7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EE7030402A16C9F500DE5BA7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE8FE0092A425A0F00EA8E24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EE8FE00A2A425C5F00EA8E24 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		EEADCEF12A30A4F500B9A805 /* SMAutheticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAutheticationView.swift; sourceTree = "<group>"; };
 		EEADCEF42A30AB1D00B9A805 /* SMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTextField.swift; sourceTree = "<group>"; };
 		EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSecureField.swift; sourceTree = "<group>"; };
+		EECEFEC52A41EB17001462C5 /* SMSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSettingsViewModel.swift; sourceTree = "<group>"; };
 		EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
-		EEFCC5052A3E49AD002E88D9 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRAuthManager.swift; sourceTree = "<group>"; };
 		EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTabBarView.swift; sourceTree = "<group>"; };
 		EEFCC50D2A3E55F2002E88D9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		EEFCC50F2A3E598D002E88D9 /* SMSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSignInView.swift; sourceTree = "<group>"; };
+		EEFCC50F2A3E598D002E88D9 /* SMSignInWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSignInWithEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EE218B462A43260600F75DFF /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+				EE218B472A43261700F75DFF /* SignInGoogleHelper.swift */,
+				EE6B9AE32A439F6D005EFD5F /* SignInAppleHelper.swift */,
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
 		EE4895E92A3C91D5008666FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,14 +148,17 @@
 		EE7030292A16C83E00DE5BA7 /* SmartMuscle */ = {
 			isa = PBXGroup;
 			children = (
-				EEA92C9A2A3A896D00AFF46E /* Managers */,
-				EEADCEE32A30A2DE00B9A805 /* ViewModel */,
-				EEADCEE82A30A41900B9A805 /* Utilitis */,
-				EEE4DE702A1BCE4A000CF146 /* Sections */,
-				EE7030432A16CD2500DE5BA7 /* Views */,
-				EE7030422A16CD2100DE5BA7 /* Models */,
 				EEADCEE22A30959900B9A805 /* App */,
+				EE0D819B2A1C1E9E00C39901 /* Extensions */,
+				EE218B462A43260600F75DFF /* Helps */,
+				EEA92C9A2A3A896D00AFF46E /* Managers */,
+				EE7030422A16CD2100DE5BA7 /* Models */,
 				EE7030312A16C83F00DE5BA7 /* Preview Content */,
+				EEE4DE702A1BCE4A000CF146 /* Sections */,
+				EEADCEE82A30A41900B9A805 /* Utilitis */,
+				EEADCEE32A30A2DE00B9A805 /* ViewModel */,
+				EE7030432A16CD2500DE5BA7 /* Views */,
+				EE8FE0092A425A0F00EA8E24 /* Info.plist */,
 			);
 			path = SmartMuscle;
 			sourceTree = "<group>";
@@ -183,7 +198,7 @@
 		EEADCEE12A30956100B9A805 /* SMSettings */ = {
 			isa = PBXGroup;
 			children = (
-				EE7030402A16C9F500DE5BA7 /* Settings.swift */,
+				EE7030402A16C9F500DE5BA7 /* SettingsView.swift */,
 				EE0D81962A1BF99200C39901 /* SMSubViews */,
 			);
 			path = SMSettings;
@@ -195,7 +210,6 @@
 				EE7030302A16C83F00DE5BA7 /* SmartMuscle.entitlements */,
 				EE67D5E22A30FBB400B2FF31 /* SmartMuscleDebug.entitlements */,
 				EEA92C9B2A3A8C5600AFF46E /* GoogleService-Info.plist */,
-				EE70302C2A16C83E00DE5BA7 /* ContentView.swift */,
 				EE70302A2A16C83E00DE5BA7 /* SmartMuscleApp.swift */,
 				EE70302E2A16C83F00DE5BA7 /* Assets.xcassets */,
 				EE4F38F92A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld */,
@@ -207,7 +221,7 @@
 		EEADCEE32A30A2DE00B9A805 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EEFCC5052A3E49AD002E88D9 /* SignInViewModel.swift */,
+				EECEFEC42A41EAFC001462C5 /* SMSttingsViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,7 +262,7 @@
 		EEADCEE82A30A41900B9A805 /* Utilitis */ = {
 			isa = PBXGroup;
 			children = (
-				EE0D819B2A1C1E9E00C39901 /* Extensions */,
+				EE8FE00A2A425C5F00EA8E24 /* Utilities.swift */,
 			);
 			path = Utilitis;
 			sourceTree = "<group>";
@@ -297,8 +311,7 @@
 		EEADCEEE2A30A4BE00B9A805 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				EEADCEEF2A30A4E000B9A805 /* SignUpView.swift */,
-				EEFCC50F2A3E598D002E88D9 /* SMSignInView.swift */,
+				EEFCC50F2A3E598D002E88D9 /* SMSignInWithEmailView.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -310,6 +323,14 @@
 				EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */,
 			);
 			path = SMTextFields;
+			sourceTree = "<group>";
+		};
+		EECEFEC42A41EAFC001462C5 /* SMSttingsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EECEFEC52A41EB17001462C5 /* SMSettingsViewModel.swift */,
+			);
+			path = SMSttingsViewModel;
 			sourceTree = "<group>";
 		};
 		EEE4DE702A1BCE4A000CF146 /* Sections */ = {
@@ -437,24 +458,25 @@
 			files = (
 				EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */,
 				EE4895D62A3C7925008666FD /* AppDelegateAdapter.swift in Sources */,
-				EE7030412A16C9F500DE5BA7 /* Settings.swift in Sources */,
+				EE7030412A16C9F500DE5BA7 /* SettingsView.swift in Sources */,
 				EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */,
 				EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */,
 				EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */,
 				EE4F38FB2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld in Sources */,
 				EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */,
-				EE70302D2A16C83E00DE5BA7 /* ContentView.swift in Sources */,
-				EEADCEF02A30A4E000B9A805 /* SignUpView.swift in Sources */,
-				EEFCC5062A3E49AD002E88D9 /* SignInViewModel.swift in Sources */,
 				EEADCEF22A30A4F500B9A805 /* SMAutheticationView.swift in Sources */,
+				EE8FE00B2A425C5F00EA8E24 /* Utilities.swift in Sources */,
 				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
 				EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */,
 				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
-				EEFCC5102A3E598D002E88D9 /* SMSignInView.swift in Sources */,
+				EE218B482A43261700F75DFF /* SignInGoogleHelper.swift in Sources */,
+				EEFCC5102A3E598D002E88D9 /* SMSignInWithEmailView.swift in Sources */,
 				EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */,
+				EECEFEC62A41EB17001462C5 /* SMSettingsViewModel.swift in Sources */,
 				EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */,
 				EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */,
 				EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */,
+				EE6B9AE42A439F6D005EFD5F /* SignInAppleHelper.swift in Sources */,
 				EE70303D2A16C9DE00DE5BA7 /* BodyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +608,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartMuscle/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -629,6 +652,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartMuscle/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

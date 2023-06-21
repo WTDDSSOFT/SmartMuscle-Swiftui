@@ -8,30 +8,36 @@
 import SwiftUI
 
 struct SMTabBarView: View {
+    @Binding var showSignInView: Bool
+    
     var body: some View {
         TabView {
             WorkOutPlan()
+                .navigationTitle("Test")
                 .tabItem {
                     Image(systemName: "dumbbell")
                     Text("WorkOutPlan")
                 }
             DietePlan()
+            
                 .tabItem {
                     Image(systemName: "light.recessed")
                     Text("DietePlan")
                 }
             BodyView()
+                .navigationTitle("DieteBodyViewPlan")
+            
                 .tabItem {
                     Image(systemName: "figure.arms.open")
                     Text("BodyView")
                 }
-            Settings()
+            SettingsView(showSignInView: $showSignInView)
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
                 }
             
-        } // MARK: - TabView
+        }// MARK: - TabView
         .edgesIgnoringSafeArea(.top)
         .accentColor(Color(.goldBackground))
     }
@@ -39,6 +45,6 @@ struct SMTabBarView: View {
 
 struct SMTabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        SMTabBarView()
+        SMTabBarView(showSignInView: .constant(false))
     }
 }

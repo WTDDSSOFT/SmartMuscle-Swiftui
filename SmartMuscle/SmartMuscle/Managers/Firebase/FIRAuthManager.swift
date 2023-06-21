@@ -21,7 +21,7 @@ struct FIRAuthDataResultModel {
 }
 
 enum AuthProviderOption: String {
-    case password = "paswword.com"
+    case email = "password"
     case google = "google.com"
     case apple = "apple.com"
 }
@@ -32,18 +32,14 @@ final class FIRAuthManager {
     
     private init() { }
     
-    func createUser(email: String, password: String) async throws -> FIRAuthDataResultModel {
-        let authResultModel = try await Auth.auth().createUser(withEmail: email, password: password)
-        return FIRAuthDataResultModel(user: authResultModel.user)
-    }
     
     func getUserAuthenticateUser() throws -> FIRAuthDataResultModel {
         guard let user = Auth.auth().currentUser else  {
             throw URLError(.badServerResponse)
         }
-        
         return FIRAuthDataResultModel(user: user)
     }
+    
     
     func getProviders() throws -> [AuthProviderOption] {
         
@@ -57,10 +53,10 @@ final class FIRAuthManager {
             if let option = AuthProviderOption(rawValue: provider.providerID) {
                 providers.append(option)
             } else {
-                assertionFailure("Provider option not found \(provider.providerID)")
+                assertionFailure("Provider option not found -> \(provider.providerID)")
             }
         }
-        print(providers)
+        print("DEBUG: User Firebase get the logIn provider -> ",providers)
         return providers
     }
     
@@ -69,13 +65,63 @@ final class FIRAuthManager {
     }
 }
 
+//MARK: SIGN EMAIL FUNCTIONS
+extension FIRAuthManager {
+    
+    @discardableResult
+    func createUser(email: String, password: String) async throws -> FIRAuthDataResultModel {
+        let authResultModel = try await Auth.auth().createUser(withEmail: email, password: password)
+        return FIRAuthDataResultModel(user: authResultModel.user)
+    }
+    
+    @discardableResult
+    func signInUser(email: String, password: String) async throws -> FIRAuthDataResultModel  {
+        let authDataResult = try await Auth.auth().signIn(withEmail: email, password: password)
+        return FIRAuthDataResultModel(user: authDataResult.user)
+    }
+    
+    func resestPassword(email: String) async throws {
+        try await Auth.auth().sendPasswordReset(withEmail: email)
+    }
+    
+    func updatePassword(password: String) async throws {
+        guard let user = Auth.auth().currentUser else  {
+            throw URLError(.badServerResponse)
+        }
+        
+        try await user.updatePassword(to: password)
+    }
+    
+    func updateEmail(email: String) async throws {
+        guard let user = Auth.auth().currentUser else  {
+            throw URLError(.badServerResponse)
+        }
+        
+        try await user.updateEmail(to: email)
+    }
+}
+// MARK: SIGN IN SSO
 
 extension FIRAuthManager {
-//    @discardableResult
-//    func signInWithApple(tokens: String)  async throws -> FIRAuthDataResultModel {
-//        let credential = OAuthProvider.appleCredential(withPro,withIDToken: tokens.idToken,
-//                                                       rawNonce: tokens.accessToken,
-//                                                       fullName: AuthProviderOption.apple.rawValue)
-//        return try await sigIn(credential:credential)
-//    }
+    
+    @discardableResult
+    func signInWithGoogle(tokens: GoogleSignResultModel) async throws -> FIRAuthDataResultModel {
+        let credential = GoogleAuthProvider.credential(withIDToken: tokens.idToken, accessToken: tokens.accessToken)
+        return try await signIn(credential: credential)
+    }
+    
+    @discardableResult
+    func signInWithApple(tokens: SignInWithAppleResult)  async throws -> FIRAuthDataResultModel {
+        let credential =  OAuthProvider.credential(
+            withProviderID: AuthProviderOption.apple.rawValue,
+            idToken: tokens.token,
+            rawNonce:  tokens.nonce)
+        return try await signIn(credential: credential)
+    }
+    
+    func signIn(credential: AuthCredential) async throws  -> FIRAuthDataResultModel {
+        let authDataResult = try await Auth.auth().signIn(with: credential)
+        return FIRAuthDataResultModel(user: authDataResult.user)
+    }
+    
 }
