@@ -114,7 +114,7 @@ struct SMAutheticationView: View {
                         }
                     }
                 } label: {
-                    SignInWithAppleViewRepresentable(type: .default, style: .black)
+                    SignInWithAppleViewRepresentable(type: .default, style: .white)
                         .allowsHitTesting(false)
                 }
                 .frame(height:  55)

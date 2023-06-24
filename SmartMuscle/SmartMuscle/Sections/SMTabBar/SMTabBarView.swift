@@ -26,7 +26,6 @@ struct SMTabBarView: View {
                 }
             BodyView()
                 .navigationTitle("DieteBodyViewPlan")
-            
                 .tabItem {
                     Image(systemName: "figure.arms.open")
                     Text("BodyView")

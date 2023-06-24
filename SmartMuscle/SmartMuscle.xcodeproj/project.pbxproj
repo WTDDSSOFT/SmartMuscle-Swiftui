@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EE0D81982A1BF9A300C39901 /* UserInfomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81972A1BF9A300C39901 /* UserInfomView.swift */; };
-		EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */; };
+		EE0D819A2A1C0D6800C39901 /* UpgradToProView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D81992A1C0D6800C39901 /* UpgradToProView.swift */; };
 		EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */; };
+		EE2076F52A479AE9002172CB /* CustomTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2076F42A479AE9002172CB /* CustomTitle.swift */; };
+		EE2076F92A47A229002172CB /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2076F82A47A229002172CB /* EditProfileView.swift */; };
 		EE218B482A43261700F75DFF /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE218B472A43261700F75DFF /* SignInGoogleHelper.swift */; };
 		EE4895D62A3C7925008666FD /* AppDelegateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */; };
 		EE4896182A3C9BC1008666FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EE4896172A3C9BC1008666FD /* FirebaseAnalytics */; };
@@ -45,8 +47,10 @@
 
 /* Begin PBXFileReference section */
 		EE0D81972A1BF9A300C39901 /* UserInfomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfomView.swift; sourceTree = "<group>"; };
-		EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradToPro.swift; sourceTree = "<group>"; };
+		EE0D81992A1C0D6800C39901 /* UpgradToProView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradToProView.swift; sourceTree = "<group>"; };
 		EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Exntension.swift"; sourceTree = "<group>"; };
+		EE2076F42A479AE9002172CB /* CustomTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitle.swift; sourceTree = "<group>"; };
+		EE2076F82A47A229002172CB /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		EE218B472A43261700F75DFF /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		EE4895D52A3C7925008666FD /* AppDelegateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateAdapter.swift; sourceTree = "<group>"; };
 		EE4F38FA2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartMuscleAppModel.xcdatamodel; sourceTree = "<group>"; };
@@ -98,8 +102,9 @@
 		EE0D81962A1BF99200C39901 /* SMSubViews */ = {
 			isa = PBXGroup;
 			children = (
-				EE0D81972A1BF9A300C39901 /* UserInfomView.swift */,
-				EE0D81992A1C0D6800C39901 /* UpgradToPro.swift */,
+				EE2076F62A47A1FE002172CB /* UserInformView */,
+				EE2076F72A47A208002172CB /* UpgraedToProView */,
+				EE2076F82A47A229002172CB /* EditProfileView.swift */,
 			);
 			path = SMSubViews;
 			sourceTree = "<group>";
@@ -110,6 +115,30 @@
 				EE0D819C2A1C1EB100C39901 /* UIColor+Exntension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EE2076F32A479AD4002172CB /* CustomTitles */ = {
+			isa = PBXGroup;
+			children = (
+				EE2076F42A479AE9002172CB /* CustomTitle.swift */,
+			);
+			path = CustomTitles;
+			sourceTree = "<group>";
+		};
+		EE2076F62A47A1FE002172CB /* UserInformView */ = {
+			isa = PBXGroup;
+			children = (
+				EE0D81972A1BF9A300C39901 /* UserInfomView.swift */,
+			);
+			path = UserInformView;
+			sourceTree = "<group>";
+		};
+		EE2076F72A47A208002172CB /* UpgraedToProView */ = {
+			isa = PBXGroup;
+			children = (
+				EE0D81992A1C0D6800C39901 /* UpgradToProView.swift */,
+			);
+			path = UpgraedToProView;
 			sourceTree = "<group>";
 		};
 		EE218B462A43260600F75DFF /* Helps */ = {
@@ -181,6 +210,7 @@
 		EE7030432A16CD2500DE5BA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE2076F32A479AD4002172CB /* CustomTitles */,
 				EEADCEF32A30AB0A00B9A805 /* SMTextFields */,
 				EEADCEE72A30A3E200B9A805 /* SMButtons */,
 			);
@@ -463,16 +493,18 @@
 				EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */,
 				EE0D819D2A1C1EB200C39901 /* UIColor+Exntension.swift in Sources */,
 				EE4F38FB2A3B5797004DBEA3 /* SmartMuscleAppModel.xcdatamodeld in Sources */,
-				EE0D819A2A1C0D6800C39901 /* UpgradToPro.swift in Sources */,
+				EE0D819A2A1C0D6800C39901 /* UpgradToProView.swift in Sources */,
 				EEADCEF22A30A4F500B9A805 /* SMAutheticationView.swift in Sources */,
 				EE8FE00B2A425C5F00EA8E24 /* Utilities.swift in Sources */,
 				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
+				EE2076F52A479AE9002172CB /* CustomTitle.swift in Sources */,
 				EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */,
 				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
 				EE218B482A43261700F75DFF /* SignInGoogleHelper.swift in Sources */,
 				EEFCC5102A3E598D002E88D9 /* SMSignInWithEmailView.swift in Sources */,
 				EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */,
 				EECEFEC62A41EB17001462C5 /* SMSettingsViewModel.swift in Sources */,
+				EE2076F92A47A229002172CB /* EditProfileView.swift in Sources */,
 				EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */,
 				EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */,
 				EE70303F2A16C9E700DE5BA7 /* DietePlan.swift in Sources */,

@@ -16,6 +16,7 @@ struct GoogleSignResultModel {
     let email: String?
 }
 
+@MainActor
 final class SignInGoogleHelper {
     
     @MainActor

@@ -14,11 +14,10 @@ struct UserInfomView: View {
             Image(systemName: "person.circle")
                 .resizable()
                 .frame(width: 80, height: 80)
-                .foregroundColor(.blue)
-                .padding(.all)
             Spacer()
             MemberDescriptionView()
         }
+        .foregroundColor(Color(uiColor: .goldBackground))
     }
 }
 
@@ -59,6 +58,5 @@ struct MemberDescriptionView: View {
             ProMemberView()
         }
         .frame(width: 146, height: 105)
-        .padding(.all)
     }
 }

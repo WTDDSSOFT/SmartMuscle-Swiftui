@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 final class Utilities {
     
@@ -30,5 +31,4 @@ final class Utilities {
         }
         return controller
     }
-    
 }

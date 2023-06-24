@@ -7,31 +7,86 @@
 
 import SwiftUI
 
-
 struct SettingsView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
     
     @StateObject private var settingsVM = SettingsViewModel()
     @Binding var showSignInView: Bool
-
+    
     var body: some View {
         NavigationView {
-            List {
-                UserInfomView()
-                Button {
-                    Task {
-                        do {
-                            try settingsVM.signOut()
-                            print("success log out !")
-                        } catch {
-                            print(error)
+            VStack {
+                List {
+                    Section{
+                        UserInfomView()
+                            .padding()
+                    }
+                    Section {
+                        NavigationLink{
+                            EditProfileView()
+                        } label: {
+                            CustomTitle(title: "Profile")
+                        }
+                        
+                        NavigationLink {
+                            
+                        } label: {
+                            CustomTitle(title: "Notifications")
+                        }
+                        
+                        NavigationLink {
+                            
+                        } label: {
+                            CustomTitle(title: "Contact Us")
+                        }
+                        NavigationLink {
+                            
+                        } label: {
+                            CustomTitle(title: "Language")
                         }
                     }
-                } label: {
-                    Text("Log out ")
+                    
+                    Section {
+                        NavigationLink {
+                            
+                        } label: {
+                            CustomTitle(title: "Units of Measure")
+                        }
+                        
+                        NavigationLink {
+                            
+                        } label: {
+                            CustomTitle(title: "Privacy Policy")
+                        }
+                    }
+                    
+                    Section {
+                        UpgradToProView()
+                        
+                        Button {
+                            Task {
+                                do {
+                                    try settingsVM.signOut()
+                                    presentationMode.wrappedValue.dismiss()
+                                    
+                                    print("success log out !")
+                                } catch {
+                                    print(error)
+                                }
+                            }
+                        } label: {
+                            Text("Log out ")
+                        }
+                    }
+                    
+                    if settingsVM.authProviders.contains(.email) {
+                        emailSectionView
+                    }
                 }
-                if settingsVM.authProviders.contains(.email) {
-                    emailSectionView
-                }
+                .foregroundColor(Color(uiColor: .goldBackground))
+                .lineSpacing(10)
+                .listStyle(.grouped)
             }
             .navigationTitle("SettingsView")
         }
@@ -47,24 +102,10 @@ struct Settings_Previews: PreviewProvider {
     }
 }
 
-struct SectionText: View {
-    @State var title: String
-    var body: some View {
-        Text(title)
-    }
-}
-
 extension SettingsView {
     
     private var emailSectionView: some View {
         Section {
-            //                    SectionText(title: "Profile")
-            //                    SectionText(title: "Privacy Policy")
-            //                    SectionText(title: "Units of Measure")
-            //                    SectionText(title: "Notifications")
-            //                    SectionText(title: "Contact Us")
-            //                    SectionText(title: "Language")
-            //                    UpgradToPro().cornerRadius(12)
             Button {
                 Task {
                     do {
