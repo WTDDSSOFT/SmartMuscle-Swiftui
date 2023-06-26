@@ -7,38 +7,9 @@
 
 import SwiftUI
 
-@MainActor
-final class SignInWithEmailViewModel: ObservableObject {
-    
-    @Published var email = ""
-    @Published var passsword = ""
-    
-    func signUp()  async throws {
-        
-        guard !email.isEmpty,
-              !passsword.isEmpty else {
-            print("No email or passowrd")
-            return
-        }
-        
-       try await FIRAuthManager.shared.createUser(email: email, password: passsword)
-    }
-    
-    func signIn()  async throws {
-        
-        guard !email.isEmpty,
-              !passsword.isEmpty else {
-            print("No email or passowrd")
-            return
-        }
-        
-       try await FIRAuthManager.shared.signInUser(email: email, password: passsword)
-    }
-}
-
 struct SMSignInWithEmailView: View {
     
-    @StateObject private var signInEmailVM = SignInWithEmailViewModel()
+    @StateObject private var signInEmailVM = SMSignInWithEmailViewModel()
     @Binding var showsSignView: Bool
 
     var body: some View {

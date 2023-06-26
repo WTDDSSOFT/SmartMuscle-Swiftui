@@ -12,23 +12,31 @@ struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @StateObject private var settingsVM = SettingsViewModel()
+    
     @Binding var showSignInView: Bool
     
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    Section{
-                        UserInfomView()
-                            .padding()
-                    }
                     Section {
-                        NavigationLink{
-                            EditProfileView()
+                        NavigationLink {
+                            EditProfileView(settingsVM: settingsVM)
                         } label: {
-                            CustomTitle(title: "Profile")
+                            HStack(alignment: .center, spacing: 10) {
+                                Image(systemName: "person.circle")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                
+                                Text("User Name")
+                                    .font(.system(size: 18,
+                                                  weight: .regular,
+                                                  design: .default))
+                            }
                         }
-                        
+                    }
+                    
+                    Section {
                         NavigationLink {
                             
                         } label: {
@@ -80,9 +88,6 @@ struct SettingsView: View {
                         }
                     }
                     
-                    if settingsVM.authProviders.contains(.email) {
-                        emailSectionView
-                    }
                 }
                 .foregroundColor(Color(uiColor: .goldBackground))
                 .lineSpacing(10)
@@ -102,51 +107,3 @@ struct Settings_Previews: PreviewProvider {
     }
 }
 
-extension SettingsView {
-    
-    private var emailSectionView: some View {
-        Section {
-            Button {
-                Task {
-                    do {
-                        try await settingsVM.resetPassword()
-                        print("Password reset !")
-                    } catch {
-                        print(error)
-                    }
-                }
-            } label: {
-                Text("Reset passsword")
-            }
-            
-            Button {
-                Task {
-                    do {
-                        try await settingsVM.updatePasswordl()
-                        print("success log out !")
-                    } catch {
-                        print(error)
-                    }
-                }
-            } label: {
-                Text("Update password ")
-            }
-            
-            Button {
-                Task {
-                    do {
-                        try await settingsVM.updateEmail()
-                        print("success log out !")
-                    } catch {
-                        print(error)
-                    }
-                }
-            } label: {
-                Text("Update email ")
-            }
-            
-        } header: {
-            Text("Email functions")
-        }
-    }
-}

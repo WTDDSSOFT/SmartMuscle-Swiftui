@@ -39,6 +39,8 @@
 		EEADCEFC2A30B93900B9A805 /* SMSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */; };
 		EECEFEC62A41EB17001462C5 /* SMSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECEFEC52A41EB17001462C5 /* SMSettingsViewModel.swift */; };
 		EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */; };
+		EEF16D192A49BC2A00A2A3CF /* SMAutheticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF16D182A49BC2A00A2A3CF /* SMAutheticationViewModel.swift */; };
+		EEF16D1B2A49BCAD00A2A3CF /* SMSignInWithEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF16D1A2A49BCAD00A2A3CF /* SMSignInWithEmailViewModel.swift */; };
 		EEFCC5092A3E4CA7002E88D9 /* FIRAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */; };
 		EEFCC50C2A3E5358002E88D9 /* SMTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */; };
 		EEFCC50E2A3E55F2002E88D9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFCC50D2A3E55F2002E88D9 /* RootView.swift */; };
@@ -73,6 +75,8 @@
 		EEADCEFB2A30B93900B9A805 /* SMSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSecureField.swift; sourceTree = "<group>"; };
 		EECEFEC52A41EB17001462C5 /* SMSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSettingsViewModel.swift; sourceTree = "<group>"; };
 		EEE4DE712A1BCE61000CF146 /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		EEF16D182A49BC2A00A2A3CF /* SMAutheticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMAutheticationViewModel.swift; sourceTree = "<group>"; };
+		EEF16D1A2A49BCAD00A2A3CF /* SMSignInWithEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSignInWithEmailViewModel.swift; sourceTree = "<group>"; };
 		EEFCC5082A3E4CA7002E88D9 /* FIRAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIRAuthManager.swift; sourceTree = "<group>"; };
 		EEFCC50B2A3E5358002E88D9 /* SMTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTabBarView.swift; sourceTree = "<group>"; };
 		EEFCC50D2A3E55F2002E88D9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 		EEADCEE32A30A2DE00B9A805 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEF16D172A49BC1A00A2A3CF /* SMAutheticationViewModel */,
 				EECEFEC42A41EAFC001462C5 /* SMSttingsViewModel */,
 			);
 			path = ViewModel;
@@ -275,7 +280,7 @@
 		EEADCEE62A30A3CA00B9A805 /* SMAuthentication */ = {
 			isa = PBXGroup;
 			children = (
-				EEADCEEE2A30A4BE00B9A805 /* Sections */,
+				EEADCEEE2A30A4BE00B9A805 /* SMSignInWithEmailView */,
 				EEADCEF12A30A4F500B9A805 /* SMAutheticationView.swift */,
 			);
 			path = SMAuthentication;
@@ -338,12 +343,12 @@
 			path = SMSections;
 			sourceTree = "<group>";
 		};
-		EEADCEEE2A30A4BE00B9A805 /* Sections */ = {
+		EEADCEEE2A30A4BE00B9A805 /* SMSignInWithEmailView */ = {
 			isa = PBXGroup;
 			children = (
 				EEFCC50F2A3E598D002E88D9 /* SMSignInWithEmailView.swift */,
 			);
-			path = Sections;
+			path = SMSignInWithEmailView;
 			sourceTree = "<group>";
 		};
 		EEADCEF32A30AB0A00B9A805 /* SMTextFields */ = {
@@ -374,6 +379,23 @@
 				EEFCC50D2A3E55F2002E88D9 /* RootView.swift */,
 			);
 			path = Sections;
+			sourceTree = "<group>";
+		};
+		EEF16D172A49BC1A00A2A3CF /* SMAutheticationViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEF16D182A49BC2A00A2A3CF /* SMAutheticationViewModel.swift */,
+				EEF16D1C2A49BCD500A2A3CF /* SMSignInWithEmailViewModel */,
+			);
+			path = SMAutheticationViewModel;
+			sourceTree = "<group>";
+		};
+		EEF16D1C2A49BCD500A2A3CF /* SMSignInWithEmailViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEF16D1A2A49BCAD00A2A3CF /* SMSignInWithEmailViewModel.swift */,
+			);
+			path = SMSignInWithEmailViewModel;
 			sourceTree = "<group>";
 		};
 		EEFCC5072A3E4C96002E88D9 /* Firebase */ = {
@@ -496,10 +518,12 @@
 				EE0D819A2A1C0D6800C39901 /* UpgradToProView.swift in Sources */,
 				EEADCEF22A30A4F500B9A805 /* SMAutheticationView.swift in Sources */,
 				EE8FE00B2A425C5F00EA8E24 /* Utilities.swift in Sources */,
+				EEF16D1B2A49BCAD00A2A3CF /* SMSignInWithEmailViewModel.swift in Sources */,
 				EE70303B2A16C9D200DE5BA7 /* WorkOutPlan.swift in Sources */,
 				EE2076F52A479AE9002172CB /* CustomTitle.swift in Sources */,
 				EEE4DE722A1BCE61000CF146 /* XMarkButton.swift in Sources */,
 				EE70302B2A16C83E00DE5BA7 /* SmartMuscleApp.swift in Sources */,
+				EEF16D192A49BC2A00A2A3CF /* SMAutheticationViewModel.swift in Sources */,
 				EE218B482A43261700F75DFF /* SignInGoogleHelper.swift in Sources */,
 				EEFCC5102A3E598D002E88D9 /* SMSignInWithEmailView.swift in Sources */,
 				EEADCEF52A30AB1D00B9A805 /* SMTextField.swift in Sources */,

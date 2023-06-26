@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserInfomView: View {
-
+    
     var body: some View {
         HStack {
             Image(systemName: "person.circle")

@@ -42,6 +42,12 @@ final class SettingsViewModel: ObservableObject {
         let password = "123456789"
         try await FIRAuthManager.shared.updatePassword(password: password)
     }
+    
+    func getAppleUserData() async throws -> SignInWithAppleResult {
+        let helper = SignInAppleHelper()
+        let tokens = try await helper.startSignInWithAppleFlow()
+        return tokens
+    }
 }
 
 

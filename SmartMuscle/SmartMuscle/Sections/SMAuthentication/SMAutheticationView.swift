@@ -23,29 +23,6 @@ import SwiftUI
  1. keyChain - ?
  */
 
-/**
- Google Button on swiftui
- */
-
-@MainActor
-final class SMAutheticationViewModel: ObservableObject {
-    
-    let signInAppleHelper = SignInAppleHelper()
-    
-    func signInGoogle() async throws {
-        let helper = SignInGoogleHelper()
-        let tokens = try await helper.signIn()
-        try await FIRAuthManager.shared.signInWithGoogle(tokens: tokens)
-    }
-    
-    func signInApple() async throws {
-        let helper = SignInAppleHelper()
-        let tokens = try await helper.startSignInWithAppleFlow()
-        try await FIRAuthManager.shared.signInWithApple(tokens: tokens)
-    }
-}
-
-
 struct SMAutheticationView: View {
     
     @Environment(\.colorScheme) var colorSheme
@@ -104,20 +81,7 @@ struct SMAutheticationView: View {
                 .frame(height: 55)
                 .cornerRadius(8)
                 
-                Button {
-                    Task {
-                        do {
-                            try await SMAutehticationVM.signInApple()
-                            showSignInView = false
-                        } catch {
-                            print(error)
-                        }
-                    }
-                } label: {
-                    SignInWithAppleViewRepresentable(type: .default, style: .white)
-                        .allowsHitTesting(false)
-                }
-                .frame(height:  55)
+                signInWithAppleButton
             }
             
             Spacer()
@@ -137,5 +101,30 @@ struct SMAutheticationView_Previews: PreviewProvider {
         NavigationStack {
             SMAutheticationView(showSignInView: .constant(false))
         }
+    }
+}
+
+extension SMAutheticationView {
+    
+    private var signInWithAppleButton: some View {
+        Button {
+            Task {
+                do {
+                    try await SMAutehticationVM.signInApple()
+                    showSignInView = false
+                } catch {
+                    print(error)
+                }
+            }
+        } label: {
+            if self.colorSheme == .dark {
+                SignInWithAppleViewRepresentable(type: .default, style: .white)
+                .allowsHitTesting(false)
+            } else if self.colorSheme == .light {
+                SignInWithAppleViewRepresentable(type: .default, style: .black)
+                .allowsHitTesting(false)
+            }
+        }
+        .frame(height:  55)
     }
 }

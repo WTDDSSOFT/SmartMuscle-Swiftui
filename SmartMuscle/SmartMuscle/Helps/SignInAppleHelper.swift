@@ -13,6 +13,14 @@ import SwiftUI
 /**
  Apple button on swiftui
  */
+
+struct SignInWithAppleResult {
+    let token: String
+    let nonce: String
+    let name:  String?
+    let email: String?
+}
+
 @MainActor
 struct SignInWithAppleViewRepresentable: UIViewRepresentable {
     
@@ -26,13 +34,6 @@ struct SignInWithAppleViewRepresentable: UIViewRepresentable {
     func updateUIView(_ uiView: ASAuthorizationAppleIDButton, context: Context) { }
 }
 
-struct SignInWithAppleResult {
-    let token: String
-    let nonce: String
-    let name:  String?
-    let email: String?
-}
-
 @MainActor
 final class SignInAppleHelper: NSObject {
     
@@ -44,7 +45,7 @@ final class SignInAppleHelper: NSObject {
     /** convert completion handle to swift conccurrency flow */
     public func startSignInWithAppleFlow() async throws -> SignInWithAppleResult {
         
-       try await withCheckedThrowingContinuation { continuation in
+        try await withCheckedThrowingContinuation { continuation in
             self.startSignInWithAppleFlow { result in
                 switch result {
                 case .success(let signInAppleResult):

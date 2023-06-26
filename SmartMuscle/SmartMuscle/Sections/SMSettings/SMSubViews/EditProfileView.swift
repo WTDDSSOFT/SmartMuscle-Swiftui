@@ -8,32 +8,21 @@
 import SwiftUI
 
 struct EditProfileView: View {
+    
+    @StateObject var settingsVM: SettingsViewModel
+
     var body: some View {
         List {
             Section {
-                Button {
-                    print("Tap tap Change img")
-                } label: {
-                    VStack(spacing: 10) {
-                        Image(systemName: "person.circle")
-                            .resizable()
-                            .clipped()
-                            .frame(width: 40, height: 40)
-                        Text("Edit")
-                            .font(.system(size: 18,
-                                          weight: .regular,
-                                          design: .default))
-                    }
-                }
-                Text("Smart Muscle")
-            }
-                        
-            Section("Profile") {
-                Text("Name")
-                Text("Email")
-                Text("Password")
+             
             }
             
+            Section("Profile") {
+                Text("Type of prfile")
+                if settingsVM.authProviders.contains(.email) {
+                    emailSectionView
+                }
+            }
         }
         .foregroundColor(Color(uiColor: .goldBackground))
         .listStyle(.grouped)
@@ -43,6 +32,52 @@ struct EditProfileView: View {
 
 struct EditProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        EditProfileView()
+        EditProfileView(settingsVM: .init())
+    }
+}
+
+extension EditProfileView {
+
+    private var emailSectionView: some View {
+        Section {
+            Button {
+                Task {
+                    do {
+                        try await settingsVM.resetPassword()
+                        print("Password reset !")
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Reset passsword")
+            }
+            
+            Button {
+                Task {
+                    do {
+                        try await settingsVM.updatePasswordl()
+                        print("success log out !")
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Update password")
+            }
+            
+            Button {
+                Task {
+                    do {
+                        try await settingsVM.updateEmail()
+                        print("success log out !")
+                    } catch {
+                        print(error)
+                    }
+                }
+            } label: {
+                Text("Update email ")
+            }
+        }
     }
 }
