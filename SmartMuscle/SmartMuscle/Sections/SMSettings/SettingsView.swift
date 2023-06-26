@@ -12,86 +12,13 @@ struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
     
     @StateObject private var settingsVM = SettingsViewModel()
-    
+
     @Binding var showSignInView: Bool
     
     var body: some View {
         NavigationView {
             VStack {
-                List {
-                    Section {
-                        NavigationLink {
-                            EditProfileView(settingsVM: settingsVM)
-                        } label: {
-                            HStack(alignment: .center, spacing: 10) {
-                                Image(systemName: "person.circle")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                
-                                Text("User Name")
-                                    .font(.system(size: 18,
-                                                  weight: .regular,
-                                                  design: .default))
-                            }
-                        }
-                    }
-                    
-                    Section {
-                        NavigationLink {
-                            
-                        } label: {
-                            CustomTitle(title: "Notifications")
-                        }
-                        
-                        NavigationLink {
-                            
-                        } label: {
-                            CustomTitle(title: "Contact Us")
-                        }
-                        NavigationLink {
-                            
-                        } label: {
-                            CustomTitle(title: "Language")
-                        }
-                    }
-                    
-                    Section {
-                        NavigationLink {
-                            
-                        } label: {
-                            CustomTitle(title: "Units of Measure")
-                        }
-                        
-                        NavigationLink {
-                            
-                        } label: {
-                            CustomTitle(title: "Privacy Policy")
-                        }
-                    }
-                    
-                    Section {
-                        UpgradToProView()
-                        
-                        Button {
-                            Task {
-                                do {
-                                    try settingsVM.signOut()
-                                    presentationMode.wrappedValue.dismiss()
-                                    
-                                    print("success log out !")
-                                } catch {
-                                    print(error)
-                                }
-                            }
-                        } label: {
-                            Text("Log out ")
-                        }
-                    }
-                    
-                }
-                .foregroundColor(Color(uiColor: .goldBackground))
-                .lineSpacing(10)
-                .listStyle(.grouped)
+                ListSettings
             }
             .navigationTitle("SettingsView")
         }
@@ -107,3 +34,83 @@ struct Settings_Previews: PreviewProvider {
     }
 }
 
+
+extension SettingsView {
+    
+    private var ListSettings: some View {
+        List {
+            Section {
+                NavigationLink {
+                    EditProfileView(settingsVM: settingsVM)
+                } label: {
+                    HStack(alignment: .center, spacing: 10) {
+                        Image(systemName: "person.circle")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                        
+                        Text("User Name")
+                            .font(.system(size: 18,
+                                          weight: .regular,
+                                          design: .default))
+                    }
+                }
+            }
+            
+            Section {
+                NavigationLink {
+                    
+                } label: {
+                    CustomTitle(title: "Notifications")
+                }
+                
+                NavigationLink {
+                    
+                } label: {
+                    CustomTitle(title: "Contact Us")
+                }
+                NavigationLink {
+                    
+                } label: {
+                    CustomTitle(title: "Language")
+                }
+            }
+            
+            Section {
+                NavigationLink {
+                    
+                } label: {
+                    CustomTitle(title: "Units of Measure")
+                }
+                
+                NavigationLink {
+                    
+                } label: {
+                    CustomTitle(title: "Privacy Policy")
+                }
+            }
+            
+            Section {
+                UpgradToProView()
+                
+                Button {
+                    Task {
+                        do {
+                            try settingsVM.signOut()
+                            presentationMode.wrappedValue.dismiss()
+                            
+                            print("success log out !")
+                        } catch {
+                            print(error)
+                        }
+                    }
+                } label: {
+                    Text("Log out ")
+                }
+            }
+            
+        }
+        .foregroundColor(Color(uiColor: .goldBackground))
+        .lineSpacing(10)
+        .listStyle(.grouped)
+    }
+}

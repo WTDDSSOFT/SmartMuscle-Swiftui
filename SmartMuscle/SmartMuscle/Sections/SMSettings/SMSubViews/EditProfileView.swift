@@ -6,15 +6,52 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct EditProfileView: View {
     
     @StateObject var settingsVM: SettingsViewModel
-
+    
+    @State private var avatarItem: PhotosPickerItem?
+    @State private var avatarImage: Data? = nil
+    
     var body: some View {
         List {
+            
             Section {
-             
+                VStack {
+                    PhotosPicker(
+                        selection: $avatarItem,
+                        matching: .images,
+                        photoLibrary: .shared()) {
+                            
+                            if let avatarImage = avatarImage, let uiImage = UIImage(data: avatarImage) {
+                                Image(uiImage: uiImage)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .clipShape(Circle())
+                                    .frame(width: 100, height: 100)
+                            } else {
+                                Image(systemName: "person.circle")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .clipShape(Circle())
+                                    .frame(width: 100, height: 100)
+                            }
+                        }
+                        .onChange(of: avatarItem) { _ in
+                            Task {
+                                if let data = try? await avatarItem?.loadTransferable(type: Data.self) {
+                                    avatarImage = data
+                                }
+                            }
+                        }
+                    Text("Edit")
+                        .font(.system(size: 15,
+                                      weight: .bold,
+                                      design: .default)
+                        )
+                }
             }
             
             Section("Profile") {
@@ -37,7 +74,7 @@ struct EditProfileView_Previews: PreviewProvider {
 }
 
 extension EditProfileView {
-
+    
     private var emailSectionView: some View {
         Section {
             Button {
