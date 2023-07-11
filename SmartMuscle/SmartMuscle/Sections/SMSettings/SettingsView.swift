@@ -41,7 +41,7 @@ extension SettingsView {
         List {
             Section {
                 NavigationLink {
-                    EditProfileView(settingsVM: settingsVM)
+                    EditProfileView()
                 } label: {
                     HStack(alignment: .center, spacing: 10) {
                         Image(systemName: "person.circle")

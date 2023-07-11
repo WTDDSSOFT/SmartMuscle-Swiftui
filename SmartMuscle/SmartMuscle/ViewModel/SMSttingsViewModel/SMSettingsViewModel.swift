@@ -11,6 +11,24 @@ import SwiftUI
 final class SettingsViewModel: ObservableObject {
     
     @Published var authProviders: [AuthProviderOption] = []
+
+    func getAppleUserData() async throws -> SignInWithAppleResult {
+        let helper = SignInAppleHelper()
+        let tokens = try await helper.startSignInWithAppleFlow()
+        return tokens
+    }
+    
+    func uploadAvatarImage(authUserCredential: FIRAuthDataResultModel, image: UIImage? ) async throws {
+        do {
+            try await FIRStorageManager.shared.uploadUserProfilePicture(by: authUserCredential, image: image)
+        } catch {
+            print(error)
+        }
+    }
+}
+
+//MARK: - FIRAuthManager
+extension SettingsViewModel {
     
     func loadAithProviders() {
         if let providers = try? FIRAuthManager.shared.getProviders() {
@@ -38,16 +56,9 @@ final class SettingsViewModel: ObservableObject {
         try await FIRAuthManager.shared.updateEmail(email: email)
     }
     
-    func updatePasswordl() async throws {
+    func updatePasswordURL() async throws {
         let password = "123456789"
         try await FIRAuthManager.shared.updatePassword(password: password)
     }
     
-    func getAppleUserData() async throws -> SignInWithAppleResult {
-        let helper = SignInAppleHelper()
-        let tokens = try await helper.startSignInWithAppleFlow()
-        return tokens
-    }
 }
-
-
